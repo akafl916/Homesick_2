@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class World1 extends GeneralWorld
 {
+    private Button button1 = new Button(1);
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -23,18 +24,29 @@ public class World1 extends GeneralWorld
      */
     private void prepare()
     {
-        initialScene1();
+        initalScene();
     }
     
-    private void initialScene1() {
-        Button1 button1 = new Button1();
-        addObject(button1, 100, 300);
+    public void act() {
+        initialSceneAct();
+    }
+    
+    private void initialSceneAct() {
         if (button1.getA() == 1) {
-            scene1();
+            scene1act();
         }
     }
+    
+    private void initalScene() {
+        addObject(button1, 100, 300);
+    }
+    
+    private void scene1Act() {
+        
+    }
+    
     private void scene1() {
-        Button2 button2 = new Button2();
+        Button button2 = new Button(2);
         addObject(button2, 300, 300);
     }
 }
