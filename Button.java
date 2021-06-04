@@ -8,33 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Button extends Actor
 {
-    private int a;
-    private int a2;
+    private World world;
     /**
      * Act - do whatever the Button wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Button(int a, String i) 
+    public Button(World world, String image) 
     {
-        this.a = a;
-        this.a2 = -1;
-        setImage(i);
+        this.world = world;
+        setImage(image);
     }
-    public int getA() {
-        return a2;
-    }
+    
     public void act() {
-        if (isPressed()) {
-            a2 = a;
-        }
+        onClick();
     }
-    public boolean isPressed() {
-        if (Greenfoot.mousePressed(this)) {
-            return true;
-        }
-        else {
-            return false;
+    
+    private void onClick() {
+        if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(world);
         }
     }
 }
-
