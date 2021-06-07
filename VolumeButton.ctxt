@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=VolumeButton
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ VolumeButton\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Button\ subclass\ that\ constructs\ a\ button\ that\ changes\ the\ universal\ music\ volume.\r\n\ \r\n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\r\n\ @version\ 6.2.2021\r\n
 comment1.params=value
 comment1.target=VolumeButton(int)
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ VolumeButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

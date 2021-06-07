@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class VolumeButton here.
+ * Button subclass that constructs a button that changes the universal music volume.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
+ * @version 6.2.2021
  */
 public class VolumeButton extends Button
 {

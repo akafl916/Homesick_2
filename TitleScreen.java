@@ -11,6 +11,8 @@ public class TitleScreen extends Homesick
 {
     // Images
     private GifImage gifBackground = new GifImage("spaceBackground.gif");
+   
+    // Active Actors
     
     /**
      * Constructor for objects of class GeneralWorld.
