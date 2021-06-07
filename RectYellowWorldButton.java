@@ -1,18 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class rectYellowButton here.
+ * WorldButton subclass that constructs a yellow rectangle button
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
+ * @version 6.5.2021
  */
-public class RectYellowButton extends Button
+public class RectYellowWorldButton extends WorldButton
 {
     /**
      * Act - do whatever the rectYellowButton wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public RectYellowButton(World world) 
+    public RectYellowWorldButton(World world) 
     {
         super(world,
         "buttonUnpressed.png",

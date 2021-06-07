@@ -1,51 +1,25 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Button here.
+ * Actor subclass that constructs a simple button.
+ * The button will set a hovered image when hovered and set a clicked image when clicked.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
+ * @version 6.5.2021
  */
 public class Button extends Actor
 {
-    private World world;
-    private String unpressed;
-    private String hovered;
-    private String pressed;
-    /**
-     * Act - do whatever the Button wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public Button(World world,
-    String unpressed,
-    String hovered,
-    String pressed) 
+    protected String image;
+    private String image_pressed;
+    private String image_hovered;
+    
+    public Button(String image,
+    String image_hovered,
+    String image_pressed) 
     {
-        this.world = world;
-        this.unpressed = unpressed;
-        this.hovered = hovered;
-        this.pressed = pressed;
-    }
-    
-    public void act() {
-        onClick();
-        onHover();
-    }
-    
-    private void onClick() {
-        if (Greenfoot.mouseClicked(this)) {
-            setImage(pressed);
-            Greenfoot.delay(2);
-            Greenfoot.setWorld(world);
-        }
-    }
-    
-    private void onHover() {
-        if (Greenfoot.mouseMoved(this)) {
-            setImage(hovered);
-        } else if (Greenfoot.mouseMoved(getWorld())) {
-            setImage(unpressed);
-        }
+        this.image = image;
+        this.image_hovered = image_hovered;
+        this.image_pressed = image_pressed;
     }
     
     public int getWidth() {
@@ -54,5 +28,25 @@ public class Button extends Actor
     
     public int getHeight(){
         return this.getImage().getHeight();
+    }
+    
+    public void act() {
+        onClick();
+        onHover();
+    }
+    
+    protected void onClick() {
+        if (Greenfoot.mouseClicked(this)) {
+            setImage(image_pressed);
+            Greenfoot.delay(2);
+        }
+    }
+    
+    protected void onHover() {
+        if (Greenfoot.mouseMoved(this)) {
+            setImage(image_hovered);
+        } else if (Greenfoot.mouseMoved(getWorld())) {
+            setImage(image);
+        }
     }
 }

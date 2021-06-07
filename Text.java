@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Text here.
+ * Class that constructs an actor with parameters text, size, and color 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
+ * @version 6.5.2021
  */
 public class Text extends Actor
 {

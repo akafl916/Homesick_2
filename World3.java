@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * World subclass
+ * Write a description of class World3 here.
  * 
- * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
- * @version 6.5.2021
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class OpeningWorld extends Homesick
+public class World3 extends Homesick
 {
     // Worlds Available
     // Images and Colors
@@ -15,9 +15,8 @@ public class OpeningWorld extends Homesick
      * Constructor for objects of class OpeningWorld.
      * 
      */
-    public OpeningWorld()
+    public World3()
     {
-       drawBackground();
        drawButtons();
        drawActors();
        drawMaterials();
@@ -25,24 +24,19 @@ public class OpeningWorld extends Homesick
     }
     
     public void act() {
-       stopPrevMusic();
+       drawBackground();
     }
     
     private void drawBackground() {
-        setBackground("metalPlate.jpg");
+        
     }
     
     private void playMusic() {
         
     }
     
-    private void stopPrevMusic() {
-        this.introMusic.pause();
-    }
-    
     private void drawButtons() {
-        RectYellowWorldButton nextWorld = new RectYellowWorldButton(new World2());
-        addObject(nextWorld, 100, 100);
+        
     }
     
     private void drawMaterials() {
