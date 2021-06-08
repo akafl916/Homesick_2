@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SettingsButton extends SwitchButton
 {   
     // Objects in Settings
-    private Asset backdrop = new Asset("metalPlateRedBorder.jpg");
+    //private Asset backdrop = new Asset("metalPlateRedBorder.jpg");
     private VolumeButton mvb = new VolumeButton(0);
     private VolumeButton nvb = new VolumeButton(1);
     private VolumeButton hvb = new VolumeButton(2);
@@ -25,7 +25,7 @@ public class SettingsButton extends SwitchButton
     }
     
     protected void On() {
-        getWorld().addObject(backdrop, Homesick.MIDDLE-270, Homesick.MIDDLE-20);
+        //getWorld().addObject(backdrop, Homesick.MIDDLE-270, Homesick.MIDDLE-20);
         getWorld().addObject(mvb, Homesick.MIDDLE-370, Homesick.MIDDLE+70);
         getWorld().addObject(nvb, Homesick.MIDDLE-370, Homesick.MIDDLE-20);
         getWorld().addObject(hvb, Homesick.MIDDLE-370, Homesick.MIDDLE-110);
@@ -36,11 +36,11 @@ public class SettingsButton extends SwitchButton
     
     protected void Off() {
         World world = getWorld();
-        world.removeObject(backdrop);
+        //world.removeObject(backdrop);
         world.removeObject(mvb);
         world.removeObject(nvb);
         world.removeObject(hvb);
-        world.removeObject(backdrop);
+        //world.removeObject(backdrop);
         world.removeObject(mute);
         world.removeObject(norm);
         world.removeObject(high);
