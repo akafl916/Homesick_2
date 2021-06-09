@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SettingsButton extends SwitchButton
 {   
     // Objects in Settings
-    private Asset backdrop = new Asset("metalPlateRedBorder.jpg");
+    //private Asset backdrop = new Asset("metalPlateRedBorder.jpg");
     private VolumeButton mvb = new VolumeButton(0);
     private VolumeButton nvb = new VolumeButton(1);
     private VolumeButton hvb = new VolumeButton(2);
@@ -40,7 +40,7 @@ public class SettingsButton extends SwitchButton
         world.removeObject(mvb);
         world.removeObject(nvb);
         world.removeObject(hvb);
-        world.removeObject(backdrop);
+        //world.removeObject(backdrop);
         world.removeObject(mute);
         world.removeObject(norm);
         world.removeObject(high);
