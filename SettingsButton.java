@@ -25,7 +25,7 @@ public class SettingsButton extends SwitchButton
     }
     
     protected void On() {
-        getWorld().addObject(backdrop, Homesick.MIDDLE-270, Homesick.MIDDLE-20);
+        //getWorld().addObject(backdrop, Homesick.MIDDLE-270, Homesick.MIDDLE-20);
         getWorld().addObject(mvb, Homesick.MIDDLE-370, Homesick.MIDDLE+70);
         getWorld().addObject(nvb, Homesick.MIDDLE-370, Homesick.MIDDLE-20);
         getWorld().addObject(hvb, Homesick.MIDDLE-370, Homesick.MIDDLE-110);
@@ -36,7 +36,7 @@ public class SettingsButton extends SwitchButton
     
     protected void Off() {
         World world = getWorld();
-        world.removeObject(backdrop);
+        //world.removeObject(backdrop);
         world.removeObject(mvb);
         world.removeObject(nvb);
         world.removeObject(hvb);
