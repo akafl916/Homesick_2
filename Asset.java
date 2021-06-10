@@ -8,9 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Asset extends Actor
 {
+    private String image;
+    
     public Asset(String image) 
     {
         setImage(image);
+        this.image = image;
+    }
+    
+    public void scale(int x, int y) {
+        GreenfootImage scaled = new GreenfootImage(image);
+        scaled.scale(x, y);
+        this.setImage(scaled);
     }
     
     public int getWidth() {

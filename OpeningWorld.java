@@ -41,7 +41,7 @@ public class OpeningWorld extends Homesick
     }
     
     private void drawButtons() {
-        RectYellowWorldButton nextWorld = new RectYellowWorldButton(new World2());
+        RectYellowWorldButton nextWorld = new RectYellowWorldButton(new Desert());
         addObject(nextWorld, 100, 100);
     }
     
