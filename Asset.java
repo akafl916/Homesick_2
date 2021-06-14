@@ -9,11 +9,25 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Asset extends Actor
 {
     private String image;
+    private boolean isGif;
+    private GifImage imageGif;
     
-    public Asset(String image) 
+    public Asset(String image, boolean isGif) 
     {
-        setImage(image);
         this.image = image;
+        this.isGif = isGif;
+        if(isGif) {
+            imageGif = new GifImage(image);
+        } else {
+            setImage(image);
+        }
+    }
+    
+    public void act() {
+        if (isGif) {
+            GreenfootImage temp = imageGif.getCurrentImage();
+            setImage(temp);
+        }
     }
     
     public void scale(int x, int y) {

@@ -8,8 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class OpeningWorld extends Homesick
 {
+    private int scene = 1;
+    private int imageCount = 0;
+    private boolean isClicked = false;
+    private Asset ship = new Asset("rocket.png", false);
+    private Asset portal = new Asset("portal.gif", true);
     // Worlds Available
+    Desert desert = new Desert();
     // Images and Colors
+    GreenfootImage starsbackground = new GreenfootImage("starsbackground.png");
     // Sounds and Music
     /**
      * Constructor for objects of class OpeningWorld.
@@ -17,23 +24,43 @@ public class OpeningWorld extends Homesick
      */
     public OpeningWorld()
     {
-       drawBackground();
        drawButtons();
        drawActors();
        drawMaterials();
-       playMusic();
     }
     
     public void act() {
+       if (scene == 1) {
+           playMusic();
+           scene++;
+       }
        stopPrevMusic();
+       imageCount += 5; //(or any other value; small -> slow moving, big -> fast movement)
+       drawBackground();
+       if(Greenfoot.mouseClicked(ship)) {
+           addObject(portal, MIDDLE, MIDDLE-400);
+           isClicked = true;
+       }
+       if (isClicked) {
+           ship.move(5);
+           if(ship.getY() <= MIDDLE-400) {
+               Greenfoot.setWorld(desert);
+           }
+       }
     }
-    
-    private void drawBackground() {
-        setBackground("metalPlate.jpg");
+     
+    public void drawBackground() {
+        if (imageCount > starsbackground.getHeight()) {
+            imageCount -= starsbackground.getHeight();
+        }
+        int temp = imageCount;
+        getBackground().drawImage(starsbackground, 0, temp);
+        getBackground().drawImage(starsbackground, 0, temp - starsbackground.getHeight());
     }
     
     private void playMusic() {
-        
+        this.ambientSpace.setVolume(VOLUME*25);
+        this.ambientSpace.play();
     }
     
     private void stopPrevMusic() {
@@ -41,8 +68,7 @@ public class OpeningWorld extends Homesick
     }
     
     private void drawButtons() {
-        RectYellowWorldButton nextWorld = new RectYellowWorldButton(new Desert());
-        addObject(nextWorld, 100, 100);
+        
     }
     
     private void drawMaterials() {
@@ -50,6 +76,7 @@ public class OpeningWorld extends Homesick
     }
     
     private void drawActors() {
-        
+        addObject(ship, MIDDLE, MIDDLE);
+        ship.setRotation(-90);
     }
 }

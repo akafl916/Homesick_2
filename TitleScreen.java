@@ -49,7 +49,7 @@ public class TitleScreen extends Homesick
     }
     
     private void drawMaterials() {
-        Asset titleLogo = new Asset("homesickLogo.png");
+        Asset titleLogo = new Asset("homesickLogo.png", false);
         addObject(titleLogo, MIDDLE, 200);
         Text txt1 = new Text("Settings", 30, BARK_RED);
         Text txt2 = new Text("Begin!", 30, BARK_RED);

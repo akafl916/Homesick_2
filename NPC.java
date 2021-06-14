@@ -44,9 +44,9 @@ public class NPC extends Actor
         speech = new Text(dialogue, 24, Color.BLACK);
         
         if (isThought) {
-            speechBubble = new Asset("thoughtBubble");
+            speechBubble = new Asset("thoughtBubble", false);
         } else {
-            speechBubble = new Asset("speechBubble.png");
+            speechBubble = new Asset("speechBubble.png", false);
         }
         
         getWorld().addObject(speechBubble,
