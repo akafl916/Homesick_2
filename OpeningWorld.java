@@ -42,7 +42,7 @@ public class OpeningWorld extends Homesick
            isClicked = true;
        }
        if (isClicked) {
-           ship.move(5);
+           ship.move(15);
            if(ship.getY() <= MIDDLE-400) {
                Greenfoot.setWorld(desert);
            }
@@ -60,7 +60,7 @@ public class OpeningWorld extends Homesick
     
     private void playMusic() {
         this.ambientSpace.setVolume(VOLUME*25);
-        this.ambientSpace.play();
+        this.ambientSpace.playLoop();
     }
     
     private void stopPrevMusic() {

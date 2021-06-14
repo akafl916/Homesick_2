@@ -7,32 +7,31 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
  * @version 6.5.2021
  */
-public class Button extends Actor
+public class Button extends EnhancedActor
 {
-    protected String image;
-    private String image_pressed;
-    private String image_hovered;
+    protected GreenfootImage image;
+    private GreenfootImage image_pressed;
+    private GreenfootImage image_hovered;
     
     public Button(String image,
     String image_hovered,
     String image_pressed) 
     {
-        this.image = image;
-        this.image_hovered = image_hovered;
-        this.image_pressed = image_pressed;
-    }
-    
-    public int getWidth() {
-        return this.getImage().getWidth();
-    }
-    
-    public int getHeight(){
-        return this.getImage().getHeight();
+        super(image);
+        this.image = new GreenfootImage(image);
+        this.image_hovered = new GreenfootImage(image_hovered);
+        this.image_pressed = new GreenfootImage(image_pressed);
     }
     
     public void act() {
         onClick();
         onHover();
+    }
+    
+    public void scale(int x, int y) {
+        image.scale(x, y);
+        image_hovered.scale(x, y);
+        image_pressed.scale(x, y);
     }
     
     protected void onClick() {

@@ -7,7 +7,7 @@ import java.util.*;
  * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
  * @version 6.2.2021
  */
-public class NPC extends Actor
+public class NPC extends EnhancedActor
 {
     private Asset speechBubble;
     private Text speech;
@@ -21,7 +21,7 @@ public class NPC extends Actor
      */
     public NPC(String image, int pitch) 
     {
-        setImage(image);
+        super(image);
         if (pitch == 0) {
             this.normal1 = new GreenfootSound("normal1Low.mp3");
             this.normal2 = new GreenfootSound("normal1Low.mp3");
@@ -41,21 +41,22 @@ public class NPC extends Actor
     }
     
     public void say(String dialogue, boolean isThought, int Mood) {
-        speech = new Text(dialogue, 24, Color.BLACK);
+        speech = new Text(dialogue, getWidth()/4, Color.BLACK);
         
         if (isThought) {
-            speechBubble = new Asset("thoughtBubble", false);
+            speechBubble = new Asset("thoughtBubble.png", false);
         } else {
             speechBubble = new Asset("speechBubble.png", false);
         }
         
+        speechBubble.scale(getWidth()*2, (int)(getHeight()*1.5));
         getWorld().addObject(speechBubble,
-        getX()+(getWidth()/2)+(speechBubble.getWidth()/2)-100,
-        getY()-(getHeight()/2)-(speechBubble.getHeight()/2)+50);
+        getX()+(getWidth()/2)+(getWidth()/2),
+        getY()-(int)(getHeight()*1.5));
         
         getWorld().addObject(speech,
-        getX()+(getWidth()/2)+(speechBubble.getWidth()/2)-100,
-        getY()-(getHeight()/2)-(speechBubble.getHeight()/2)-50);
+        (getX()+(getWidth()/2)+(getWidth()/2)),
+        getY()-(int)(getHeight()*1.5)-speechBubble.getHeight()/12);
         
         if (Mood==0) {
             if(Greenfoot.getRandomNumber(100) < 50) {
@@ -77,13 +78,5 @@ public class NPC extends Actor
     public void stopSaying() {
         getWorld().removeObject(speech);
         getWorld().removeObject(speechBubble);
-    }
-    
-    public int getWidth() {
-        return this.getImage().getWidth();
-    }
-    
-    public int getHeight(){
-        return this.getImage().getHeight();
     }
 }

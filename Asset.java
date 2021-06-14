@@ -6,20 +6,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
  * @version 6.5.2021
  */
-public class Asset extends Actor
+public class Asset extends EnhancedActor
 {
-    private String image;
     private boolean isGif;
     private GifImage imageGif;
     
     public Asset(String image, boolean isGif) 
     {
-        this.image = image;
+        super(image);
         this.isGif = isGif;
         if(isGif) {
-            imageGif = new GifImage(image);
-        } else {
-            setImage(image);
+            this.imageGif = new GifImage(image);
         }
     }
     
@@ -28,19 +25,5 @@ public class Asset extends Actor
             GreenfootImage temp = imageGif.getCurrentImage();
             setImage(temp);
         }
-    }
-    
-    public void scale(int x, int y) {
-        GreenfootImage scaled = new GreenfootImage(image);
-        scaled.scale(x, y);
-        this.setImage(scaled);
-    }
-    
-    public int getWidth() {
-        return this.getImage().getWidth();
-    }
-    
-    public int getHeight(){
-        return this.getImage().getHeight();
     }
 }

@@ -8,12 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Homesick extends World
 {
+    public static boolean isClickThrough = false;
     public static int MIDDLE = 540;
     public static int VOLUME = 1;
     
     //Sounds and Music
     public static GreenfootSound introMusic = new GreenfootSound("homesick.mp3");
     public static GreenfootSound ambientSpace = new GreenfootSound("ambientspacything.mp3");
+    public static GreenfootSound desertMusic = new GreenfootSound("desertMusic.mp3");
     
     public static GreenfootSound normal1Low = new GreenfootSound("normal1Low.mp3");
     public static GreenfootSound normal2Low = new GreenfootSound("normal1Low.mp3");
@@ -29,6 +31,8 @@ public class Homesick extends World
     public static GreenfootSound happyHigh = new GreenfootSound("happyHigh.mp3");
     public static GreenfootSound angry = new GreenfootSound("angry.mp3");
     
+    public static GreenfootSound portalPew = new GreenfootSound("portalPew.mp3");
+    public static GreenfootSound groundPow = new GreenfootSound("groundPow.mp3");
     //Colors
     public static Color BARK_RED = new Color(89, 0, 12);
     
