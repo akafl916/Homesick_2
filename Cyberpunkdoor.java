@@ -14,13 +14,8 @@ public class Cyberpunkdoor extends WorldButton
      */
     public Cyberpunkdoor(World world){
         super(world, 
-        "cyberpunkdoor1", 
-        "cyberpunkdoor1", 
-        "cyberpunkdoor1");
-    }
-    
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+        "cyberpunkdoor1.png", 
+        "cyberpunkdoor1.png", 
+        "cyberpunkdoor1.png");
+    }   
 }
