@@ -38,7 +38,7 @@ public class CityInside extends Homesick
     }
     
     public void drawBackground(){
-        GreenfootImage background = new GreenfootImage("cyberpunkcity");
+        GreenfootImage background = new GreenfootImage("cyberpunkcity2.1.jpg");
         background.scale(1080, 1080);
         setBackground(background);
     }
