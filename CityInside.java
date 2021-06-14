@@ -15,5 +15,31 @@ public class CityInside extends Homesick
      */
     public CityInside()
     {
+       drawMaterials();
+       drawButtons();
+       drawActors();
+       drawBackground();
+    }
+    
+    public void act(){
+        
+    }
+    
+    public void drawMaterials(){
+        
+    }
+    
+    public void drawButtons(){
+        
+    }
+    
+    public void drawActors(){
+        
+    }
+    
+    public void drawBackground(){
+        GreenfootImage background = new GreenfootImage("cyberpunkcity");
+        background.scale(1080, 1080);
+        setBackground(background);
     }
 }
