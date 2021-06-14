@@ -4,4 +4,6 @@ comment0.text=\r\n\ Class\ that\ constructs\ a\ basic\ screen\ and\ holds\ unive
 comment1.params=
 comment1.target=Homesick()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DefaultWorld.\r\n\ \r\n
-numComments=2
+comment2.params=
+comment2.target=void\ gameOver()
+numComments=3

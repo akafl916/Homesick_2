@@ -14,8 +14,8 @@ public class Desert extends Homesick
     private Asset rocket = new Asset("rocket.png", false);
     private Asset portal = new Asset("portal.gif", true);
     private Asset explosion = new Asset("explosion.png", false);
-    private NPC Tod = new NPC("tod.png", 1);
-    private NPC Rob = new NPC("rob.png", 0);
+    private NPC Tod = new NPC("tod.png", 1, false);
+    private NPC Rob = new NPC("rob.png", 0, false);
     // Worlds Available
     // Images and Colors
     // Sounds and Music
@@ -70,7 +70,6 @@ public class Desert extends Homesick
         addObject(house4,  MIDDLE-360, MIDDLE+300);
         Asset house2 = new Asset("pyramidDoor.png", false);
         addObject(house2, MIDDLE-390, MIDDLE+319);
-        
         addObject(portal, 1040, 50);
     }
     

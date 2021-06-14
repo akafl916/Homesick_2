@@ -15,11 +15,13 @@ public class NPC extends EnhancedActor
     private GreenfootSound normal2;
     private GreenfootSound sad;
     private GreenfootSound happy;
+    private GreenfootSound angry = Homesick.angry;
+    private boolean isPlayer;
     /**
      * Act - do whatever the NPC wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public NPC(String image, int pitch) 
+    public NPC(String image, int pitch, boolean isPlayer) 
     {
         super(image);
         if (pitch == 0) {
@@ -38,6 +40,17 @@ public class NPC extends EnhancedActor
             this.sad = new GreenfootSound("sadHigh.mp3");
             this.happy = new GreenfootSound("happyHigh.mp3");
         }
+        this.isPlayer = isPlayer;
+    }
+    
+    public void act() {
+        if(isPlayer) {
+            moveOnKeyPress();
+        }
+    }
+    
+    private void moveOnKeyPress() {
+        
     }
     
     public void say(String dialogue, boolean isThought, int Mood) {
@@ -72,6 +85,9 @@ public class NPC extends EnhancedActor
         } else if (Mood==2) {
             sad.setVolume(10*Homesick.VOLUME);
             sad.play();
+        } else if (Mood==3) {
+            angry.setVolume(30*Homesick.VOLUME);
+            angry.play();
         }
     }
     
