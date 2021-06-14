@@ -18,8 +18,8 @@ public class DesertTemple extends Homesick
      */
     public DesertTemple()
     {
-       drawButtons();
        drawActors();
+       drawButtons();
        drawMaterials();
        drawBackground();
     }
@@ -43,17 +43,20 @@ public class DesertTemple extends Homesick
     
     private void drawActors() {
         Asset coffin3 = new Asset("coffin.png", false);
-        
-        addObject(coffin3, MIDDLE - 150, MIDDLE+150);
+        coffin3.scale(0.75);
+        addObject(coffin3, MIDDLE - 140, MIDDLE+175);
         Asset coffin2 = new Asset("coffin.png", false);
+        coffin2.scale(0.9);
         addObject(coffin2, MIDDLE - 220, MIDDLE+270);
         Asset coffin1 = new Asset("coffin.png", false);
-        addObject(coffin1, MIDDLE - 350, MIDDLE+370);
-        
-        
+        addObject(coffin1, MIDDLE - 330, MIDDLE+370);
         Asset coffin4 = new Asset("coffin.png", false);
-        addObject(coffin4, MIDDLE - 600, MIDDLE);
+        coffin4.scale(0.75);
+        addObject(coffin4, MIDDLE + 160, MIDDLE+175);
         Asset coffin5 = new Asset("coffin.png", false);
-        addObject(coffin5, MIDDLE - 600, MIDDLE);
+        coffin5.scale(0.9);
+        addObject(coffin5, MIDDLE + 240, MIDDLE+270);
+        Asset coffin6 = new Asset("coffin.png", false);
+        addObject(coffin6, MIDDLE + 350, MIDDLE+370);
     }
 }

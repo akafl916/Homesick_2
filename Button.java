@@ -34,6 +34,12 @@ public class Button extends EnhancedActor
         image_pressed.scale(x, y);
     }
     
+    public void scale(int p) {
+        image.scale(getWidth()*p, getHeight()*p);
+        image_hovered.scale(getWidth()*p, getHeight()*p);
+        image_pressed.scale(getWidth()*p, getHeight()*p);
+    }
+    
     protected void onClick() {
         if (Greenfoot.mouseClicked(this)) {
             setImage(image_pressed);
