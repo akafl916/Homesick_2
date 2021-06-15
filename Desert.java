@@ -48,7 +48,7 @@ public class Desert extends Homesick
     }
     
     private void playMusic() {
-        this.desertMusic.setVolume(VOLUME*7);
+        this.desertMusic.setVolume(VOLUME*15);
         this.desertMusic.playLoop();
         musicScene++;
     }

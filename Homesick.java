@@ -35,6 +35,8 @@ public class Homesick extends World
     public static GreenfootSound portalPew = new GreenfootSound("portalPew.mp3");
     public static GreenfootSound groundPow = new GreenfootSound("groundPow.mp3");
     public static GreenfootSound clink = new GreenfootSound("winclink.mp3");
+    public static GreenfootSound transitionSpook = new GreenfootSound("transitionSpook.mp3");
+    public static GreenfootSound nopeWrong = new GreenfootSound("nopewrong.mp3");
     //Colors
     public static Color BARK_RED = new Color(89, 0, 12);
     

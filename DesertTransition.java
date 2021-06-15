@@ -37,17 +37,17 @@ public class DesertTransition extends Homesick
         addObject(Rob, MIDDLE+robX, MIDDLE+robY);
         Rob.setRotation(54 + rotation);
         rotation+=5;
-        todX-=3;
-        robX+=3;
-        todY-=3;
-        robY+=3;
+        todX-=3*0.1;
+        robX+=3*0.1;
+        todY-=3*0.1;
+        robY+=3*0.1;
         Tod.setLocation(MIDDLE+todX, MIDDLE+todY);
         Rob.setLocation(MIDDLE+robX, MIDDLE+robY);
         
         if(s > 100) {
             Rob.scale(s, s);
             Tod.scale(s, s);
-            s-=3;
+            s-=3*0.1;
         } else {
             Greenfoot.setWorld(new CyberpunkCity());
         }
@@ -64,7 +64,8 @@ public class DesertTransition extends Homesick
     }
     
     private void playMusic() {
-        
+        transitionSpook.setVolume(20*VOLUME);
+        transitionSpook.play();
     }
     
     private void drawButtons() {

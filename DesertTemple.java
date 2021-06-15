@@ -22,6 +22,7 @@ public class DesertTemple extends Homesick
     private Asset mummy = new Asset("mummy.png", false);
     private Asset key = new Asset("key.png", false);
     private Text rp = new Text("Rob's Patience: " + 90, 50, Color.BLACK);
+    private Asset explosion = new Asset("explosion.png", false);
     // Worlds Available
     // Images and Colors
     private GreenfootImage background = new GreenfootImage("desertTempleBackground.png");
@@ -62,7 +63,12 @@ public class DesertTemple extends Homesick
            if(mummy.getY() == Tod.getY()) {
                Greenfoot.setWorld(new GameOver("you got killed\nby the mummy"));
            }
-           if(Greenfoot.mouseClicked(Tod)) {
+           if(Greenfoot.mouseClicked(mummy)) {
+               addObject(explosion, mummy.getX(), mummy.getY());
+               this.groundPow.setVolume(VOLUME*20);
+               this.groundPow.play();
+               Greenfoot.delay(50);
+               removeObject(explosion);
                removeObject(mummy);
                scene++;
            }
@@ -70,6 +76,12 @@ public class DesertTemple extends Homesick
        if(scene == 3) {
            Tod.stopSaying();
            Greenfoot.delay(50);
+           Tod.say("...", false, 0);
+           Greenfoot.delay(125);
+           Tod.stopSaying();
+           Tod.say("Kaboom?", false, 0);
+           Greenfoot.delay(150);
+           Tod.stopSaying();
            Tod.say("I should\nprobably get that\nkey and bring it\nto Rob.", true, 0);
            scene++;
        }

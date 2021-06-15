@@ -17,6 +17,7 @@ public class NPC extends EnhancedActor
     private GreenfootSound happy;
     private GreenfootSound angry = Homesick.angry;
     private boolean isPlayer;
+    private int rand = Greenfoot.getRandomNumber(100);
     /**
      * Act - do whatever the NPC wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -72,21 +73,21 @@ public class NPC extends EnhancedActor
         getY()-(int)(getHeight()*1.5)-speechBubble.getHeight()/12);
         
         if (Mood==0) {
-            if(Greenfoot.getRandomNumber(100) < 50) {
-                normal1.setVolume(10*Homesick.VOLUME);
+            if(rand<50) {
+                normal1.setVolume(20*Homesick.VOLUME);
                 normal1.play();
             } else {
-                normal2.setVolume(10*Homesick.VOLUME);
+                normal2.setVolume(20*Homesick.VOLUME);
                 normal2.play();
             }
         } else if (Mood==1) {
-            happy.setVolume(10*Homesick.VOLUME);
+            happy.setVolume(20*Homesick.VOLUME);
             happy.play();
         } else if (Mood==2) {
-            sad.setVolume(10*Homesick.VOLUME);
+            sad.setVolume(20*Homesick.VOLUME);
             sad.play();
         } else if (Mood==3) {
-            angry.setVolume(30*Homesick.VOLUME);
+            angry.setVolume(50*Homesick.VOLUME);
             angry.play();
         }
     }

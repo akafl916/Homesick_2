@@ -32,7 +32,6 @@ public class CyberpunkCity extends Homesick
        drawButtons();
        drawActors();
        drawBackground();
-       playMusic();
     }
     
     private void playMusic(){
@@ -59,6 +58,8 @@ public class CyberpunkCity extends Homesick
                     scene++;
                 } else {
                     counter--;
+                    nopeWrong.setVolume(VOLUME*25);
+                    nopeWrong.play();
                     removeObject(counterText);
                     counterText = new Text("You have " + counter + " remaining attempts.", 24, Color.GREEN);
                     addObject(counterText, MIDDLE+300, MIDDLE+140);
@@ -73,6 +74,7 @@ public class CyberpunkCity extends Homesick
         }
         if(scene == 5) {
             Greenfoot.delay(25);
+            clink.setVolume(VOLUME*30);
             clink.play();
             Greenfoot.delay(100);
             Greenfoot.setWorld(new CityInside());
@@ -105,7 +107,7 @@ public class CyberpunkCity extends Homesick
             scene++;
         }
         if (scene == 2) {
-            Greenfoot.delay(50);
+            Greenfoot.delay(275);
             Rob.say("TOD", false, 3);
             Greenfoot.delay(100);
             Rob.stopSaying();
@@ -131,7 +133,8 @@ public class CyberpunkCity extends Homesick
             Greenfoot.delay(100);
             Rob.stopSaying();
             Greenfoot.delay(200);
-            Tod.say("I should really\nget this door open\nbefore the snickers\nwears off...", true, 1);
+            Tod.say("I should really\nget this door open\nbefore the snickers\nwears off...", true, 0);
+            playMusic();
             scene=3;
         }
     }
@@ -154,4 +157,4 @@ public class CyberpunkCity extends Homesick
         background.scale(1080, 1080);
         setBackground(background);
     }
-}
+    }

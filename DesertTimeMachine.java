@@ -34,6 +34,9 @@ public class DesertTimeMachine extends Homesick
             Greenfoot.delay(300);
             Tod.stopSaying();
             Rob.say("Don't worry, we're\n protagonists, we\ncan't die.", false, 1);
+            Greenfoot.delay(150);
+            Rob.stopSaying();
+            Rob.say("Now use that\nkey on the time\nmachine", false, 0);
             scene++;
         }
         if(Greenfoot.mouseClicked(timemachine)) {
