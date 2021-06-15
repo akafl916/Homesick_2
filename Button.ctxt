@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Button
-comment0.text=\r\n\ Actor\ subclass\ that\ constructs\ a\ simple\ button.\r\n\ The\ button\ will\ set\ a\ hovered\ image\ when\ hovered\ and\ set\ a\ clicked\ image\ when\ clicked.\r\n\ \r\n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\r\n\ @version\ 6.5.2021\r\n
+comment0.text=\n\ Actor\ subclass\ that\ constructs\ a\ simple\ button.\n\ The\ button\ will\ set\ a\ hovered\ image\ when\ hovered\ and\ set\ a\ clicked\ image\ when\ clicked.\n\ \n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\n\ @version\ 6.5.2021\n
 comment1.params=image\ image_hovered\ image_pressed
 comment1.target=Button(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.params=
