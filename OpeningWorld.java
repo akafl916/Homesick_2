@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * World subclass
+ * Homesick subclass that creates the opening world, with the spaceship and portal. 
  * 
  * @authors Aryan Kafle, Aaron Williams, Christopher Jo, Martin Jang
  * @version 6.5.2021

@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class EnhancedActor here.
+ * Some more shared useful variables and methods
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -10,9 +10,6 @@ public class EnhancedActor extends Actor
 {
     private String image;
 
-    /**
-     * Constructor for objects of class EnhancedActor
-     */
     public EnhancedActor(String image)
     {
         this.image = image;

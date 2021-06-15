@@ -1,7 +1,7 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class CyberpunkCity here.
+ * This creates the cyberpunk city world, including the rocket, portal, characters, door, minigame, and dialogue
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -41,6 +41,10 @@ public class CyberpunkCity extends Homesick
     
     public void act(){
         initialScene();
+        postScene();
+    }
+    
+    private void postScene() {
         if(Greenfoot.mouseClicked(cyberpunkDoor)) {
             showKeypad();
             scene++;
@@ -157,4 +161,4 @@ public class CyberpunkCity extends Homesick
         background.scale(1080, 1080);
         setBackground(background);
     }
-    }
+}

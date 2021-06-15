@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DesertTimeMachine here.
+ * This world will show the characters about to go through the portal
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -26,6 +26,11 @@ public class DesertTimeMachine extends Homesick
     }
     
     public void act() {
+        initialAnimation();
+        postAnimation();
+    }
+
+    private void initialAnimation() {
         if (scene == 0) {
             Rob.say("Oh what a\nconveniently placed\ntime machine!", false, 1);
             Greenfoot.delay(150);
@@ -39,26 +44,24 @@ public class DesertTimeMachine extends Homesick
             Rob.say("Now use that\nkey on the time\nmachine", false, 0);
             scene++;
         }
+    }
+
+    private void postAnimation() {
         if(Greenfoot.mouseClicked(timemachine)) {
             Greenfoot.setWorld(new DesertTransition());
         }
     }
+
     private void drawBackground() {
         background.scale(1080, 1080);
         setBackground(background);
     }
     
-    private void playMusic() {
-        
-    }
+    private void playMusic() {}
     
-    private void drawButtons() {
-        
-    }
+    private void drawButtons() {}
     
-    private void drawMaterials() {
-        
-    }
+    private void drawMaterials() {}
     
     private void drawActors() {
         timemachine.scale(0.4);

@@ -40,7 +40,7 @@ public class DesertTemple extends Homesick
     }
     
     public void act() {
-       initialScene();
+       initialAnimation();
        if(Greenfoot.mouseClicked(coffin3)) {
            if(scene == 1) {
                spawnMummy();
@@ -110,7 +110,7 @@ public class DesertTemple extends Homesick
         Greenfoot.delay(50);
     }
     
-    private void initialScene() {
+    private void initialAnimation() {
         if (scene == 0) {
             Greenfoot.delay(50);
             Rob.say("You\nshould probably\nCheck those coffins,\nTod.", false, 0);

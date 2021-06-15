@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DesertTransition here.
+ * This is another world to show the transition between desert world and cyberpunk city
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -14,13 +14,12 @@ public class DesertTransition extends Homesick
     private int todY = 100;
     private int robY = -100;
     private int s = 500;
+
     private GifImage gifBackground = new GifImage("vortex.gif");
+
     private NPC Tod = new NPC("tod.png", 1, false);
     private NPC Rob = new NPC("rob.png", 0, false);
-    /**
-     * Constructor for objects of class DesertTransition.
-     * 
-     */
+    
     public DesertTransition()
     {  
        playMusic();
@@ -32,6 +31,10 @@ public class DesertTransition extends Homesick
     public void act() {
         stopPreviousMusic();
         drawBackground();
+        initialAnimation();
+    }
+
+    private void initialAnimation() {
         addObject(Tod, MIDDLE+todX, MIDDLE+todY);
         Tod.setRotation(147 + rotation);
         addObject(Rob, MIDDLE+robX, MIDDLE+robY);
