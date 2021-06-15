@@ -15,8 +15,8 @@ public class CyberpunkCity extends Homesick
     private Asset screen = new Asset("screen.png", false);
     private String key = "0113401134";
     private Text greentext = new Text(key, 24, Color.GREEN);
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     private String password = "";
     private String t = "";
     private Text text = new Text("", 1, Color.BLACK);

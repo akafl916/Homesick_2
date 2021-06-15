@@ -10,6 +10,8 @@ public class Asset extends EnhancedActor
 {
     private boolean isGif;
     private GifImage imageGif;
+    private boolean isScaled;
+    private int scaleAmount;
     
     public Asset(String image, boolean isGif) 
     {
@@ -21,7 +23,7 @@ public class Asset extends EnhancedActor
     }
     
     public void act() {
-        if (isGif) {
+        if(isGif) {
             GreenfootImage temp = imageGif.getCurrentImage();
             setImage(temp);
         }

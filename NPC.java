@@ -18,11 +18,12 @@ public class NPC extends EnhancedActor
     private GreenfootSound angry = Homesick.angry;
     private boolean isPlayer;
     private int rand = Greenfoot.getRandomNumber(100);
+    private int speed;
     /**
      * Act - do whatever the NPC wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public NPC(String image, int pitch, boolean isPlayer) 
+    public NPC(String image, int pitch, int speed) 
     {
         super(image);
         if (pitch == 0) {
@@ -42,6 +43,7 @@ public class NPC extends EnhancedActor
             this.happy = new GreenfootSound("happyHigh.mp3");
         }
         this.isPlayer = isPlayer;
+        this.speed = speed;
     }
     
     public void act() {
@@ -50,8 +52,16 @@ public class NPC extends EnhancedActor
         }
     }
     
-    private void moveOnKeyPress() {
-        
+    public void moveOnKeyPress() {
+        if(Greenfoot.isKeyDown("up")) {
+            setLocation(getX(), getY()-speed);
+        } else if (Greenfoot.isKeyDown("down")) {
+            setLocation(getX(), getY()+speed);
+        } else if (Greenfoot.isKeyDown("left")) {
+            setLocation(getX()-speed, getY());
+        } else if (Greenfoot.isKeyDown("right")) {
+            setLocation(getX()+speed, getY());
+        }
     }
     
     public void say(String dialogue, boolean isThought, int Mood) {
