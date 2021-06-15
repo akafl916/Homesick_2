@@ -30,6 +30,7 @@ public class DesertTransition extends Homesick
     }
     
     public void act() {
+        stopPreviousMusic();
         drawBackground();
         addObject(Tod, MIDDLE+todX, MIDDLE+todY);
         Tod.setRotation(147 + rotation);
@@ -50,6 +51,10 @@ public class DesertTransition extends Homesick
         } else {
             Greenfoot.setWorld(new CyberpunkCity());
         }
+    }
+    
+    private void stopPreviousMusic() {
+        desertMusic.pause();
     }
     
     private void drawBackground() {

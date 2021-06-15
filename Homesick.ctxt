@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Homesick
-comment0.text=\n\ Class\ that\ constructs\ a\ basic\ screen\ and\ holds\ universal\ variables\ for\ its\ subclasses\n\ \n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\n\ @version\ 6.5.2021\n
+comment0.text=\r\n\ Class\ that\ constructs\ a\ basic\ screen\ and\ holds\ universal\ variables\ for\ its\ subclasses\r\n\ \r\n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\r\n\ @version\ 6.5.2021\r\n
 comment1.params=
 comment1.target=Homesick()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ DefaultWorld.\n\ \n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DefaultWorld.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ gameOver()
 numComments=3

@@ -33,7 +33,7 @@ public class DesertTimeMachine extends Homesick
             Tod.say("So we're\njust gonna ignore\nhow you left me\nto get killed\nby a MUMMY", false, 3);
             Greenfoot.delay(300);
             Tod.stopSaying();
-            Rob.say("Yes.", false, 1);
+            Rob.say("Don't worry, we're\n protagonists, we\ncan't die.", false, 1);
             scene++;
         }
         if(Greenfoot.mouseClicked(timemachine)) {
