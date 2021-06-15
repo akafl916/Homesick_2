@@ -17,8 +17,8 @@ public class DesertTemple extends Homesick
     private Asset coffin4 = new Asset("coffin.png", false);
     private Asset coffin5 = new Asset("coffin.png", false);
     private Asset coffin6 = new Asset("coffin.png", false);
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     private Asset mummy = new Asset("mummy.png", false);
     private Asset key = new Asset("key.png", false);
     private Text rp = new Text("Rob's Patience: " + 90, 50, Color.BLACK);

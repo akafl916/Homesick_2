@@ -15,8 +15,8 @@ public class DinosaurWorld extends Homesick
      */
     private int scene = 0;
     private Asset portal = new Asset("portal.gif", true);
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     private Asset dinosaur = new Asset("Dinosaur.png", false);
     
     public DinosaurWorld()

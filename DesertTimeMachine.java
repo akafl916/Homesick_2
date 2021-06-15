@@ -11,8 +11,8 @@ public class DesertTimeMachine extends Homesick
     private int scene = 0;
     private GreenfootImage background = new GreenfootImage("desertTempleBackground.png");
     private Asset timemachine = new Asset("timemachine.png", false);
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     /**
      * Constructor for objects of class DesertTimeMachine.
      * 

@@ -14,8 +14,8 @@ public class BatCave extends Homesick
      * 
      */
     
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     private Asset bat = new Asset("bat.png", false);
     
     public BatCave()

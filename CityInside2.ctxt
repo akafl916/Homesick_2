@@ -1,7 +1,22 @@
 #BlueJ class context
 comment0.target=CityInside2
-comment0.text=\n\ Write\ a\ description\ of\ class\ CityInside2\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CityInside2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=CityInside2()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ CityInside2.\n\ \n
-numComments=2
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ initialScene()
+comment4.params=
+comment4.target=void\ postScene()
+comment5.params=
+comment5.target=void\ drawBackground()
+comment6.params=
+comment6.target=void\ playMusic()
+comment7.params=
+comment7.target=void\ drawButtons()
+comment8.params=
+comment8.target=void\ drawMaterials()
+comment9.params=
+comment9.target=void\ drawActors()
+numComments=10

@@ -17,8 +17,8 @@ public class DesertTransition extends Homesick
 
     private GifImage gifBackground = new GifImage("vortex.gif");
 
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     
     public DesertTransition()
     {  

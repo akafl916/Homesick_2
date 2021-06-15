@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=CyberpunkCity
-comment0.text=\n\ This\ creates\ the\ cyberpunk\ city\ world,\ including\ the\ rocket,\ portal,\ characters,\ door,\ minigame,\ and\ dialogue\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ This\ creates\ the\ cyberpunk\ city\ world,\ including\ the\ rocket,\ portal,\ characters,\ door,\ minigame,\ and\ dialogue\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=CyberpunkCity()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ CityInside.\n\ \n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CityInside.\r\n\ \r\n
 comment10.params=
 comment10.target=void\ drawBackground()
 comment2.params=

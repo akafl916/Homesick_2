@@ -52,8 +52,7 @@ public class CityTransition extends Homesick
             Tod.scale(s, s);
             s-=3*0.1;
         } else {
-            //Greenfoot.setWorld();
-            Greenfoot.stop();
+            Greenfoot.setWorld(new DinosaurWorld());
         }
     }
     

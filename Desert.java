@@ -14,8 +14,8 @@ public class Desert extends Homesick
     private Asset rocket = new Asset("rocket.png", false);
     private Asset portal = new Asset("portal.gif", true);
     private Asset explosion = new Asset("explosion.png", false);
-    private NPC Tod = new NPC("tod.png", 1, false);
-    private NPC Rob = new NPC("rob.png", 0, false);
+    private NPC Tod = new NPC("tod.png", 1, 0);
+    private NPC Rob = new NPC("rob.png", 0, 0);
     // Worlds Available
     // Images and Colors
     // Sounds and Music

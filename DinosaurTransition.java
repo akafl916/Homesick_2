@@ -18,7 +18,7 @@ public class DinosaurTransition extends Homesick
     {
        drawBackground();
        Text text = new Text("A few minutes later...", 100, Color.WHITE);
-       addObject(text, 550, 700);
+       addObject(text, MIDDLE, MIDDLE);
     }
     
     private void drawBackground() {
