@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=EnhancedActor
-comment0.text=\n\ Some\ more\ shared\ useful\ variables\ and\ methods\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Some\ more\ shared\ useful\ variables\ and\ methods\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=image
 comment1.target=EnhancedActor(java.lang.String)
 comment2.params=
