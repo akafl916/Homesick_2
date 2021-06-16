@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DesertTransition
-comment0.text=\r\n\ This\ is\ another\ world\ to\ show\ the\ transition\ between\ desert\ world\ and\ cyberpunk\ city\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ This\ is\ another\ world\ to\ show\ the\ transition\ between\ desert\ world\ and\ cyberpunk\ city\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=DesertTransition()
 comment2.params=

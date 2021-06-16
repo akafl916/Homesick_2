@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Text
-comment0.text=\r\n\ Class\ that\ constructs\ an\ actor\ with\ parameters\ text,\ size,\ and\ color\ \r\n\ \r\n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\r\n\ @version\ 6.5.2021\r\n
+comment0.text=\n\ Class\ that\ constructs\ an\ actor\ with\ parameters\ text,\ size,\ and\ color\ \n\ \n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\n\ @version\ 6.5.2021\n
 comment1.params=text\ size\ color
 comment1.target=Text(java.lang.String,\ int,\ greenfoot.Color)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Text\r\n
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Text\n
 numComments=2

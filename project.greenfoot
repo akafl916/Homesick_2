@@ -71,6 +71,7 @@ dependency3.type=UsesDependency
 dependency30.from=DinosaurLast
 dependency30.to=NPC
 dependency30.type=UsesDependency
+<<<<<<< HEAD
 dependency31.from=DinosaurLast
 dependency31.to=Asset
 dependency31.type=UsesDependency
@@ -97,10 +98,39 @@ dependency38.to=NPC
 dependency38.type=UsesDependency
 dependency39.from=CyberpunkCity
 dependency39.to=GameOver
+=======
+dependency31.from=CityTransition
+dependency31.to=DinosaurWorld
+dependency31.type=UsesDependency
+dependency32.from=OpeningWorld
+dependency32.to=Asset
+dependency32.type=UsesDependency
+dependency33.from=OpeningWorld
+dependency33.to=Desert
+dependency33.type=UsesDependency
+dependency34.from=CyberpunkCity
+dependency34.to=Asset
+dependency34.type=UsesDependency
+dependency35.from=CyberpunkCity
+dependency35.to=Text
+dependency35.type=UsesDependency
+dependency36.from=CyberpunkCity
+dependency36.to=NPC
+dependency36.type=UsesDependency
+dependency37.from=CyberpunkCity
+dependency37.to=GameOver
+dependency37.type=UsesDependency
+dependency38.from=CyberpunkCity
+dependency38.to=CityInside
+dependency38.type=UsesDependency
+dependency39.from=DesertTemple
+dependency39.to=Asset
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 dependency39.type=UsesDependency
 dependency4.from=DesertTransition
 dependency4.to=GifImage
 dependency4.type=UsesDependency
+<<<<<<< HEAD
 dependency40.from=CyberpunkCity
 dependency40.to=CityInside
 dependency40.type=UsesDependency
@@ -130,10 +160,42 @@ dependency48.to=Asset
 dependency48.type=UsesDependency
 dependency49.from=Desert
 dependency49.to=NPC
+=======
+dependency40.from=DesertTemple
+dependency40.to=NPC
+dependency40.type=UsesDependency
+dependency41.from=DesertTemple
+dependency41.to=Text
+dependency41.type=UsesDependency
+dependency42.from=DesertTemple
+dependency42.to=GameOver
+dependency42.type=UsesDependency
+dependency43.from=DesertTemple
+dependency43.to=DesertTimeMachine
+dependency43.type=UsesDependency
+dependency44.from=Desert
+dependency44.to=Asset
+dependency44.type=UsesDependency
+dependency45.from=Desert
+dependency45.to=NPC
+dependency45.type=UsesDependency
+dependency46.from=Desert
+dependency46.to=DesertDoor
+dependency46.type=UsesDependency
+dependency47.from=Desert
+dependency47.to=DesertTemple
+dependency47.type=UsesDependency
+dependency48.from=Desert
+dependency48.to=Text
+dependency48.type=UsesDependency
+dependency49.from=NPC
+dependency49.to=Asset
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 dependency49.type=UsesDependency
 dependency5.from=DesertTransition
 dependency5.to=NPC
 dependency5.type=UsesDependency
+<<<<<<< HEAD
 dependency50.from=Desert
 dependency50.to=DesertDoor
 dependency50.type=UsesDependency
@@ -166,6 +228,37 @@ dependency59.to=Text
 dependency59.type=UsesDependency
 dependency6.from=DesertTransition
 dependency6.to=CyberpunkCity
+=======
+dependency50.from=NPC
+dependency50.to=Text
+dependency50.type=UsesDependency
+dependency51.from=NPC
+dependency51.to=Homesick
+dependency51.type=UsesDependency
+dependency52.from=SettingsButton
+dependency52.to=VolumeButton
+dependency52.type=UsesDependency
+dependency53.from=SettingsButton
+dependency53.to=ClickThroughButton
+dependency53.type=UsesDependency
+dependency54.from=SettingsButton
+dependency54.to=Text
+dependency54.type=UsesDependency
+dependency55.from=SettingsButton
+dependency55.to=Homesick
+dependency55.type=UsesDependency
+dependency56.from=ClickThroughButton
+dependency56.to=Homesick
+dependency56.type=UsesDependency
+dependency57.from=VolumeButton
+dependency57.to=Homesick
+dependency57.type=UsesDependency
+dependency58.from=Asset
+dependency58.to=GifImage
+dependency58.type=UsesDependency
+dependency6.from=TitleScreen
+dependency6.to=GifImage
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 dependency6.type=UsesDependency
 dependency60.from=SettingsButton
 dependency60.to=Homesick
@@ -189,12 +282,21 @@ dependency9.from=TitleScreen
 dependency9.to=OpeningWorld
 dependency9.type=UsesDependency
 editor.fx.0.height=707
+<<<<<<< HEAD
 editor.fx.0.width=954
 editor.fx.0.x=1613
 editor.fx.0.y=700
 height=1407
 package.numDependencies=63
 package.numTargets=32
+=======
+editor.fx.0.width=840
+editor.fx.0.x=600
+editor.fx.0.y=147
+height=831
+package.numDependencies=58
+package.numTargets=28
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -322,14 +424,22 @@ target23.width=80
 target23.x=0
 target23.y=0
 target24.height=50
+<<<<<<< HEAD
 target24.name=DinosaurLast
+=======
+target24.name=OpeningWorld
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 target24.showInterface=false
 target24.type=ClassTarget
 target24.width=90
 target24.x=0
 target24.y=0
 target25.height=50
+<<<<<<< HEAD
 target25.name=CityTransition
+=======
+target25.name=CyberpunkCity
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 target25.showInterface=false
 target25.type=ClassTarget
 target25.width=100
@@ -434,7 +544,12 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
 width=1634
 world.lastInstantiated=DinosaurLast
+=======
+width=1434
+world.lastInstantiated=Homesick
+>>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 xPosition=0
-yPosition=0
+yPosition=23
