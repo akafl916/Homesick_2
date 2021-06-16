@@ -19,6 +19,11 @@ public class NPC extends EnhancedActor
     private boolean isPlayer;
     private int rand = Greenfoot.getRandomNumber(100);
     private int speed;
+    private boolean isJumping = false;
+    private boolean i = false;
+    private boolean a = false;
+    private int initY    = 0;
+    
     /**
      * Act - do whatever the NPC wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -61,6 +66,43 @@ public class NPC extends EnhancedActor
             setLocation(getX()-speed, getY());
         } else if (Greenfoot.isKeyDown("right")) {
             setLocation(getX()+speed, getY());
+        }
+    }
+    
+    public void moveOnKeyPress(boolean isJumper, int jumpLevel) {
+        if(Greenfoot.isKeyDown("up")) {
+            isJumping = true;
+        }
+        if (Greenfoot.isKeyDown("left")) {
+            setLocation(getX()-speed, getY());
+        }
+        if (Greenfoot.isKeyDown("right")) {
+            setLocation(getX()+speed, getY());
+        }
+        
+        if(isJumping) {
+            if(!a) {
+                initY = getY();
+                a = true;
+            }
+            if(getY() >= jumpLevel && !i) {
+                setLocation(getX(), getY()-speed);
+            } else {
+                setLocation(getX(), getY()+speed);
+                i = true;
+                if(Math.abs(getY() - initY) <= 30) {
+                    setLocation(getX(), initY);
+                    isJumping = false;
+                    i = false;
+                    a = false;
+                }
+            }
+        }
+    }
+    
+    public void isTouching(Class c, int r, String causeOfDeath) {
+        if(this.getObjectsInRange(r, c).size() != 0) {
+            Greenfoot.setWorld(new GameOver(causeOfDeath));
         }
     }
     
