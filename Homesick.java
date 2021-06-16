@@ -17,6 +17,7 @@ public class Homesick extends World
     public static GreenfootSound ambientSpace = new GreenfootSound("ambientspacything.mp3");
     public static GreenfootSound desertMusic = new GreenfootSound("desertMusic.mp3");
     public static GreenfootSound cityMusic = new GreenfootSound("city.mp3");
+    public static GreenfootSound homesick = new GreenfootSound("homesick2.mp3");
     
     public static GreenfootSound normal1Low = new GreenfootSound("normal1Low.mp3");
     public static GreenfootSound normal2Low = new GreenfootSound("normal1Low.mp3");

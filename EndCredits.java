@@ -21,16 +21,20 @@ public class EndCredits extends Homesick
     private Asset black = new Asset("blacker.png", false);
     private Asset black2 = new Asset("blacker.png", false);
     private int slide = 1080;
+    private int scene = 0;
     public EndCredits()
     {
        drawBackground();
        drawButtons();
        drawActors();
        drawMaterials();
-       playMusic();
     }
     
     public void act() {
+       if(scene == 0) {
+            playMusic();
+            scene++;
+       }
        developers.setLocation(MIDDLE, 50 + slide);
        developers1.setLocation(MIDDLE, 160 + slide);
        music.setLocation(MIDDLE, 300 + slide);
@@ -51,7 +55,8 @@ public class EndCredits extends Homesick
     }
     
     private void playMusic() {
-        
+        homesick.setVolume(VOLUME*20);
+        homesick.play();
     }
     
     private void drawButtons() {
