@@ -1,16 +1,9 @@
 #BlueJ class context
 comment0.target=NPC
-<<<<<<< HEAD
 comment0.text=\r\n\ Actor\ that\ creates\ dialogue\r\n\ \r\n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\r\n\ @version\ 6.2.2021\r\n
 comment1.params=image\ pitch\ speed
 comment1.target=NPC(java.lang.String,\ int,\ int)
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ NPC\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-=======
-comment0.text=\n\ Actor\ that\ creates\ dialogue\n\ \n\ @authors\ Aryan\ Kafle,\ Aaron\ Williams,\ Christopher\ Jo,\ Martin\ Jang\n\ @version\ 6.2.2021\n
-comment1.params=image\ pitch\ speed
-comment1.target=NPC(java.lang.String,\ int,\ int)
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ NPC\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
->>>>>>> 61267ee8fd2c122b41bd326c613c5e8c1dd28649
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
